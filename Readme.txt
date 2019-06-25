@@ -33,6 +33,24 @@ project setup:
 5. deployment:   
  1. gett a git software (https://git-scm.com
  2. github account
- 1. netlify acount
+ 3. netlify acount
+ a. create new repository in github as 
+ b. after create it, copy: git remote add origin https://github.com/daccukc/react-city-tours-dac-cu.git
+ c. issue the comand: git add .
+ d. issue the command git commit -m "first commit"
+ e. paste the git remote add origin https://github.com/daccukc/react-city-tours-dac-cu.git on the command prompt
+ f. issue: git push -u origin master this is saying how we want to push this.
  
+ g. go to netlify and login as github account
+ g.1. click on New site from Git
+ g.2. click on GitHub button to login netlify  as github account
+ g.3. choose the repository city-tour in this case
+ g.4. click on deployment
+ g.5. click on Site setting to change the name of the site by clicking on Change site name and enter "react-city-tour-dac-cu"
  
+
+6. maintenante:
+6.1 change the background to $mainGreen in index.scss and save it 
+
+
+https://react-city-tour-dac-cu.netlify.com/
