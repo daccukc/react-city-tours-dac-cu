@@ -1,0 +1,26 @@
+/**
+ * Step 2:
+  override verything to zero
+  define color variables
+  set body 
+ */
+/* override verything to zero */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* create our own variable */
+$mainBlack: #222;
+$mainGreen: #82b340;
+$mainWhite: #fff;
+$mainGrey: #ececec;
+$mainRed: #ff0000;
+
+body {
+  background: $mainBlack;
+  color: $mainGreen;
+  font-family: "Open Sans", sans-serif; /* using google's open sans font */
+}

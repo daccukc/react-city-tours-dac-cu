@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+/**
+ * Step 6:
+ */
+.tourlist {
+  width: 70vw; /* is percentage of the screen */
+  margin: 0 auto; /* place in center */
+  padding: 2rem; /* */
+}
+
+/* media queries allows us to style a certain elements we selecting at a certain screen at 768px */
+@media screen and (min-width: 768px) {
+  .tourlist {
+    width: 85vw;
+    display: grid; /* want to make column layout */
+    grid-template-columns: 1fr 1fr; /* we need this define how many columns (2 columns) */
+    grid-column-gap: 1.5rem; /* define space between them */
+  }
+}
+/* media queries allows us to style a certain elements we selecting at a certain screen at 1140 
+   ony change the columns and it knows the rest of it is unchanged like display:grid, gap*/
+@media screen and (min-width: 1140px) {
+  .tourlist {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* we need this define how many columns (3 columns) */
+  }
+}

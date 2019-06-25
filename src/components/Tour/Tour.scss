@@ -1,0 +1,61 @@
+@import "../../index.scss";
+
+/**
+ * Step 8:
+ */
+
+/* for the image tour */
+.tour {
+  background: $mainGrey;
+  border-radius: 0.8rem; /* */
+  margin: 1rem 0;
+  img {
+    width: 100%;
+    border-top-left-radius: 0.8rem; /* round conner */
+    border-top-right-radius: 0.8rem; /* round conner */
+    display: block; /* to specifies the display behavior (the type of rendering box) of an element.*/
+  }
+}
+.img-container {
+  position: relative;
+}
+
+/* css for the x button */
+.close-btn {
+  position: absolute;
+  display: block;
+  top: 5%; /* 5% top from image container */
+  right: 5%; /* 5% right from image container */
+  color: $mainRed;
+  font-size: 2rem; /* the size the "x" */
+  cursor: pointer;
+  transition: all 0.3s linear; /* "x" icon will disappear in 3 seconds */
+  opacity: 0;
+}
+
+.img-container:hover .close-btn {
+  opacity: 1; /* display the "x" icon when mouse hover the image */
+}
+
+.tour-info {
+  padding: 1rem 0.5rem;
+  background: $mainWhite;
+}
+h3 {
+  text-transform: uppercase;
+  color: $mainGreen;
+}
+h4 {
+  text-transform: capitalize;
+  color: $mainBlack;
+  margin: 0.2rem 0 0.6rem 0;
+}
+h5 {
+  text-transform: capitalize;
+  span {
+    color: $mainGreen;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer; /* for the faCaretSquareDown incon */
+  }
+}
