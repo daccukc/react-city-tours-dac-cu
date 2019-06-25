@@ -38,7 +38,7 @@ project setup:
  b. after create it, copy: git remote add origin https://github.com/daccukc/react-city-tours-dac-cu.git
  c. issue the comand: git add .
  d. issue the command git commit -m "first commit"
- e. paste the git remote add origin https://github.com/daccukc/react-city-tours-dac-cu.git on the command prompt
+ e. paste the "git remote add origin https://github.com/daccukc/react-city-tours-dac-cu.git" on the command prompt
  f. issue: git push -u origin master this is saying how we want to push this.
  
  g. go to netlify and login as github account
@@ -51,6 +51,9 @@ project setup:
 
 6. maintenante:
 6.1 change the background to $mainGreen in index.scss and save it 
+6.2 issue the command: git add .
+6.3 issue the command: git commit -m "background change"
+6.4 issue the command: git push -u origin master 
 
 
 https://react-city-tour-dac-cu.netlify.com/
